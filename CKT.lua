@@ -3,7 +3,7 @@ wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-187.8138885498047, 8.777145385742188, 67.15576171875)
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-164.67428588867188, 8.777145385742188, 66.57061004638672)
-wait(11)
+wait(12)
 
 local droppers = {
     {-188.54376220703125, 8.777145385742188, 53.755001068115234},
@@ -132,7 +132,7 @@ for _, pos in ipairs(positions) do
     wait(1)
 end
 
-wait(10)
+wait(5)
 local weapons = {
     -- weapons
     {-32.55913543701172, 175.87754821777344, -369.3922424316406},
