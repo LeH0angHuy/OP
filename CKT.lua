@@ -27,10 +27,9 @@ local droppers = {
     {-30.103614807128906, 8.777145385742188, 22.44525909423828} -- end drop
 }
 
--- Iterate over each position and set the character's position
 for _, drop in ipairs(droppers) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(drop))
-    wait(1) -- Wait for 1 second before moving to the next position
+    wait(1)
 end
 
 local positions = {
@@ -103,7 +102,6 @@ local positions = {
     {-54.551231384277344, 85.5771255493164, -337.3497314453125},
     {-46.72196578979492, 85.5771255493164, -318.2760925292969},
     {-32.04562759399414, 85.5771255493164, -337.3836364746094},
-    {-32.55913543701172, 175.87754821777344, -369.3922424316406},
     {2.925710916519165, 30.177133560180664, -374.3843078613281},
     {-150.0054168701172, 9.110458374023438, -454.9341735839844},
     {-161.80215454101562, 9.27716064453125, -472.6427307128906},
@@ -126,16 +124,25 @@ local positions = {
     {-51.11277770996094, 154.4098663330078, -975.2478637695312},
     {-49.9403190612793, 154.4098663330078, -961.896484375},
     {-57.9687385559082, 154.4098663330078, -959.87890625},
-    {-70.22846221923828, 154.4098663330078, -960.281005859375},
+    {-70.22846221923828, 154.4098663330078, -960.281005859375}
+}
+
+for _, pos in ipairs(positions) do
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(pos))
+    wait(1)
+end
+
+wait(10)
+local weapons = {
     -- weapons
+    {-32.55913543701172, 175.87754821777344, -369.3922424316406},
     {-28.48593521118164, 176.1232147216797, -355.1936340332031},
     {-37.66551208496094, 176.1232147216797, -355.86968994140625},
     {-41.58789825439453, 176.0958709716797, -383.4147033691406},
     {-29.327390670776367, 176.1232147216797, -382.8205261230469}
 }
 
--- Iterate over each position and set the character's position
-for _, pos in ipairs(positions) do
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(pos))
-    wait(2) -- Wait for 2 second before moving to the next position
+for _, weap in ipairs(weapons) do
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(weap))
+    wait(1)
 end
