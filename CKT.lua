@@ -145,7 +145,7 @@ for _, sky in ipairs(skyisland) do
 end
 
 -- Weapons
-wait(10)
+wait(15)
 local weapons = {
     -- weapons
     {-32.55913543701172, 175.87754821777344, -369.3922424316406},
@@ -157,5 +157,5 @@ local weapons = {
 
 for _, weap in ipairs(weapons) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(weap))
-    wait(1)
+    wait(1.5)
 end
