@@ -141,11 +141,11 @@ local skyisland = {
 
 for _, sky in ipairs(skyisland) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(sky))
-    wait(2)
+    wait(2.5)
 end
 
 -- Weapons
-wait(15)
+wait(20)
 local weapons = {
     -- weapons
     {-32.55913543701172, 175.87754821777344, -369.3922424316406},
