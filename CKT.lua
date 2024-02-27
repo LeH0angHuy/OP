@@ -5,6 +5,7 @@ wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-164.67428588867188, 8.777145385742188, 66.57061004638672)
 wait(11)
 
+-- Droppers and 3 swordsman
 local droppers = {
     {-188.54376220703125, 8.777145385742188, 53.755001068115234},
     {-189.3678436279297, 8.777145385742188, 38.631568908691406},
@@ -32,6 +33,7 @@ for _, drop in ipairs(droppers) do
     wait(0.75)
 end
 
+-- All the other things on ground
 local positions = {
     {-190.4008331298828, 8.777145385742188, 19.7260684967041},
     {-189.86233520507812, 8.777145385742188, 1.135688066482544},
@@ -111,7 +113,16 @@ local positions = {
     {-123.87023162841797, 9.110458374023438, -493.1727294921875},
     {-125.41978454589844, 9.27716064453125, -514.9216918945312},
     {-149.583251953125, 10.543366432189941, -598.0836181640625},
-    {-117.23856353759766, 10.543366432189941, -599.0513305664062},
+    {-117.23856353759766, 10.543366432189941, -599.0513305664062}
+}
+
+for _, pos in ipairs(positions) do
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(pos))
+    wait(1)
+end
+
+-- Sky islands
+local skyisland = {
     {-141.32742309570312, 154.4098663330078, -957.2674560546875},
     {-149.4819793701172, 154.4098663330078, -973.8655395507812},
     {-142.58880615234375, 154.40989685058594, -974.90087890625},
@@ -127,11 +138,12 @@ local positions = {
     {-70.22846221923828, 154.4098663330078, -960.281005859375}
 }
 
-for _, pos in ipairs(positions) do
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(pos))
-    wait(1.1)
+for _, sky in ipairs(skyisland) do
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(sky))
+    wait(1.5)
 end
 
+-- Weapons
 wait(10)
 local weapons = {
     -- weapons
