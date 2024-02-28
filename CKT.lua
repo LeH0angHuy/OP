@@ -5,8 +5,8 @@ wait(0.5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-164.67428588867188, 8.777145385742188, 66.57061004638672)
 wait(7.5)
 
--- Droppers and 3 swordsman
-local droppers = {
+-- All on ground
+local positions = {
     {-188.54376220703125, 8.777145385742188, 53.755001068115234},
     {-189.3678436279297, 8.777145385742188, 38.631568908691406},
     {-153.33956909179688, 8.777145385742188, 49.34624481201172}, -- start drop
@@ -26,15 +26,6 @@ local droppers = {
     {-31.61617088317871, 8.777137756347656, 52.06917190551758},
     {-30.07865333557129, 8.777145385742188, 36.609840393066406},
     {-30.103614807128906, 8.777145385742188, 22.44525909423828} -- end drop
-}
-
-for _, drop in ipairs(droppers) do
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(drop))
-    wait(0.75)
-end
-
--- All the other things on ground
-local positions = {
     {-188.98655700683594, 8.777145385742188, 22.40960693359375},
     {-189.86233520507812, 8.777145385742188, 1.135688066482544},
     {-182.17184448242188, 8.777145385742188, 77.94282531738281},
@@ -118,7 +109,7 @@ local positions = {
 
 for _, pos in ipairs(positions) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(pos))
-    wait(0.75)
+    wait(0.7)
 end
 
 -- Sky islands
