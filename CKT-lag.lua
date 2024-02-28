@@ -1,7 +1,7 @@
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-188.7037353515625, 8.777145385742188, 78.1675033569336)
-wait(0.5)
+wait(0.75)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-187.8138885498047, 8.777145385742188, 67.15576171875)
-wait(0.5)
+wait(0.75)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-164.67428588867188, 8.777145385742188, 66.57061004638672)
 wait(9)
 
@@ -113,7 +113,7 @@ for _, pos in ipairs(positions) do
 end
 
 -- Sky islands
-wait(7.5)
+wait(5)
 local skyisland = {
     {-141.32742309570312, 154.4098663330078, -957.2674560546875},
     {-149.4819793701172, 154.4098663330078, -973.8655395507812},
@@ -136,7 +136,7 @@ for _, sky in ipairs(skyisland) do
 end
 
 -- Weapons
-wait(7.5)
+wait(5)
 local weapons = {
     -- weapons
     {-32.55913543701172, 175.87754821777344, -369.3922424316406},
@@ -148,5 +148,5 @@ local weapons = {
 
 for _, weap in ipairs(weapons) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(weap))
-    wait(1.5)
+    wait(2)
 end
