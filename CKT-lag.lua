@@ -109,7 +109,7 @@ local positions = {
 
 for _, pos in ipairs(positions) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(pos))
-    wait(1.25)
+    wait(1)
 end
 
 -- Sky islands
