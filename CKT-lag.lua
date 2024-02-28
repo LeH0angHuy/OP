@@ -30,7 +30,7 @@ local droppers = {
 
 for _, drop in ipairs(droppers) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(drop))
-    wait(1.11)
+    wait(1)
 end
 
 -- All the other things on ground
