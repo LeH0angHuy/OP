@@ -30,7 +30,7 @@ local droppers = {
 
 for _, drop in ipairs(droppers) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(drop))
-    wait(0.75)
+    wait(0.5)
 end
 
 -- All the other things on ground
@@ -118,7 +118,7 @@ local positions = {
 
 for _, pos in ipairs(positions) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(pos))
-    wait(0.75)
+    wait(0.65)
 end
 
 -- Sky islands
@@ -141,7 +141,7 @@ local skyisland = {
 
 for _, sky in ipairs(skyisland) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(sky))
-    wait(2)
+    wait(1.5)
 end
 
 -- Weapons
