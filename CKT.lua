@@ -114,7 +114,8 @@ end
 
 -- Sky islands
 wait(5)
-local skyisland = {
+local skyweap = {
+    -- sky
     {-141.32742309570312, 154.4098663330078, -957.2674560546875},
     {-149.4819793701172, 154.4098663330078, -973.8655395507812},
     {-142.58880615234375, 154.40989685058594, -974.90087890625},
@@ -128,16 +129,6 @@ local skyisland = {
     {-49.9403190612793, 154.4098663330078, -961.896484375},
     {-57.9687385559082, 154.4098663330078, -959.87890625},
     {-70.22846221923828, 154.4098663330078, -960.281005859375}
-}
-
-for _, sky in ipairs(skyisland) do
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(sky))
-    wait(1.5)
-end
-
--- Weapons
-wait(7.5)
-local weapons = {
     -- weapons
     {-32.55913543701172, 175.87754821777344, -369.3922424316406},
     {-28.48593521118164, 176.1232147216797, -355.1936340332031},
@@ -146,7 +137,7 @@ local weapons = {
     {-29.327390670776367, 176.1232147216797, -382.8205261230469}
 }
 
-for _, weap in ipairs(weapons) do
+for _, weap in ipairs(skyweap) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(weap))
     wait(1.5)
 end
