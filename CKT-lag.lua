@@ -145,7 +145,7 @@ for _, sky in ipairs(skyisland) do
 end
 
 -- Weapons
-wait(20)
+wait(15)
 local weapons = {
     -- weapons
     {-32.55913543701172, 175.87754821777344, -369.3922424316406},
