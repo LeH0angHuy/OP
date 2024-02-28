@@ -118,11 +118,11 @@ local positions = {
 
 for _, pos in ipairs(positions) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(pos))
-    wait(1.11)
+    wait(1.2)
 end
 
 -- Sky islands
-wait(10)
+wait(7.5)
 local skyisland = {
     {-141.32742309570312, 154.4098663330078, -957.2674560546875},
     {-149.4819793701172, 154.4098663330078, -973.8655395507812},
@@ -145,7 +145,7 @@ for _, sky in ipairs(skyisland) do
 end
 
 -- Weapons
-wait(15)
+wait(10)
 local weapons = {
     -- weapons
     {-32.55913543701172, 175.87754821777344, -369.3922424316406},
