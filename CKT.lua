@@ -3,7 +3,7 @@ wait(0.5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-187.8138885498047, 8.777145385742188, 67.15576171875)
 wait(0.5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-164.67428588867188, 8.777145385742188, 66.57061004638672)
-wait(10)
+wait(7.5)
 
 -- Droppers and 3 swordsman
 local droppers = {
@@ -141,7 +141,7 @@ local skyisland = {
 
 for _, sky in ipairs(skyisland) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(sky))
-    wait(2.5)
+    wait(2)
 end
 
 -- Weapons
