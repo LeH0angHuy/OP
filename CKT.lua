@@ -113,7 +113,7 @@ for _, pos in ipairs(positions) do
 end
 
 -- Sky islands
-wait(7.5)
+wait(5)
 local skyweap = {
     -- sky
     {-141.32742309570312, 154.4098663330078, -957.2674560546875},
@@ -139,5 +139,5 @@ local skyweap = {
 
 for _, weap in ipairs(skyweap) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(weap))
-    wait(1.25)
+    wait(1)
 end
