@@ -113,7 +113,6 @@ for _, pos in ipairs(positions) do
 end
 
 -- Sky islands
-wait(5)
 local skyweap = {
     -- sky
     {-141.32742309570312, 154.4098663330078, -957.2674560546875},
