@@ -138,5 +138,5 @@ local skyweap = {
 
 for _, weap in ipairs(skyweap) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(weap))
-    wait(1)
+    wait(0.75)
 end
