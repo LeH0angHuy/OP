@@ -1,4 +1,3 @@
---[[
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-188.7037353515625, 8.777145385742188, 78.1675033569336)
 wait(0.75)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-187.8138885498047, 8.777145385742188, 67.15576171875)
@@ -136,7 +135,6 @@ local skyweap = {
     {-41.58789825439453, 176.0958709716797, -383.4147033691406},
     {-29.327390670776367, 176.1232147216797, -382.8205261230469}
 }
-]]
 
 for _, weap in ipairs(skyweap) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(weap))
