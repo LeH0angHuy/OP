@@ -3,7 +3,7 @@ wait(0.75)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-187.8138885498047, 8.777145385742188, 67.15576171875)
 wait(0.75)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-164.67428588867188, 8.777145385742188, 66.57061004638672)
-wait(9)
+wait(10)
 
 -- All on ground
 local positions = {
@@ -109,7 +109,7 @@ local positions = {
 
 for _, pos in ipairs(positions) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(pos))
-    wait(1)
+    wait(1.1)
 end
 
 -- Sky islands
@@ -138,5 +138,5 @@ local skyweap = {
 
 for _, weap in ipairs(skyweap) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(weap))
-    wait(1.25)
+    wait(1.1)
 end
