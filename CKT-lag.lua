@@ -7,6 +7,8 @@ while true do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-187.8138885498047, 8.777145385742188, 67.15576171875)
     wait(0.75)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-164.67428588867188, 8.777145385742188, 66.57061004638672)
+    wait(0.75)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-32.55913543701172, 175.87754821777344, -369.3922424316406)
     wait(8)
 
     -- All on ground
