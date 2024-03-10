@@ -146,8 +146,8 @@ while true do
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(weap))
         wait(0.5)
     end
-
-    wait(2.5)
+    
+    wait(1)
     game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("Rebirth"):FireServer()
     wait(4)
 end
