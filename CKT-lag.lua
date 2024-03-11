@@ -115,7 +115,7 @@ while true do
 
     for _, pos in ipairs(positions) do
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(pos))
-        wait(1)
+        wait(0.85)
     end
 
     -- Sky islands
@@ -144,10 +144,10 @@ while true do
 
     for _, weap in ipairs(skyweap) do
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(weap))
-        wait(1)
+        wait(0.85)
     end
 
-    wait(4)
+    wait(3)
     game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("Rebirth"):FireServer()
     wait(4)
 end
