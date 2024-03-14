@@ -144,10 +144,10 @@ while true do
 
     for _, weap in ipairs(skyweap) do
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(weap))
-        wait(0.85)
+        wait(0.8)
     end
 
-    wait(3)
+    wait(1)
     game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("Rebirth"):FireServer()
     wait(4)
 end
