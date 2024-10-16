@@ -41,7 +41,9 @@ local positions = {
     CFrame.new(118.566536, 11.7234964, -94.0194092, 0.0688586906, -1.70912209e-08, -0.997626424, -1.05290546e-07, 1, -2.43993039e-08, 0.997626424, 1.06720734e-07, 0.0688586906)
 }
 
-for _, position in ipairs(positions) do
-    humanoidRootPart.CFrame = position
-    wait(0.5) -- Wait for 0.5 seconds
+while true do
+    for _, position in ipairs(positions) do
+        humanoidRootPart.CFrame = position
+        wait(0.5) -- Wait for 0.5 seconds
+    end
 end
